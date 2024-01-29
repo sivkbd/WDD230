@@ -1,0 +1,26 @@
+@media only screen and (max-width: 800px) {
+    nav{
+
+        display: flex;
+        gap: 10px;
+    }
+   
+    body {
+      
+      background-color: rgb(187, 178, 136);
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main h2 h3{
+        
+        font-size:  medium;
+    }
+
+    section{
+        grid-column: 1/3;
+        
+        
+    }
+  }
