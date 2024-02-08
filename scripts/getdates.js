@@ -1,11 +1,11 @@
 
-let year = new Date().getFullYear();
+let currentyear = new Date().getFullYear();
 
-let copyright = `© ${year}`;
-
-
-let lastModified = `Last modified: ${document.lastModified}`;
+let copyright = `© ${currentyear}`;
 
 
 document.querySelector("footer > p:first-of-type").innerHTML = copyright;
-document.querySelector("#lastModified").innerHTML = lastModified;
+
+let lastModified = document.lastModified;
+
+document.querySelector('footer > p:last-of-type').innerHTML = lastModified;
